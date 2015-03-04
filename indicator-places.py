@@ -121,7 +121,7 @@ class IndicatorPlaces:
         
     def on_bookmarks_changed(self, filemonitor, file, other_file, event_type):
         if event_type == gio.FILE_MONITOR_EVENT_CHANGES_DONE_HINT:
-            print 'Bookmarks changed, updating menu...'
+            print('Bookmarks changed, updating menu...')
             self.update_menu()
 
 if __name__ == "__main__":
